@@ -1,0 +1,19 @@
+# Build outputs
+dist/
+
+# Vendored raylib builds (native + web) — these are large binaries
+# that should be rebuilt locally, not committed
+lib/raylib/native/*
+lib/raylib/web/*
+!lib/raylib/native/.gitkeep
+!lib/raylib/web/.gitkeep
+
+# emscripten cache (if generated inside the project instead of ~/.emscripten)
+.emscripten_cache/
+
+# OS/editor cruft
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/
