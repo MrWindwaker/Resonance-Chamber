@@ -1,6 +1,6 @@
 # ---- Project config ----
 NAME       := hexmerge
-SRC        := src/main.c
+SRC        := src/main.c src/hex_grid.c src/tile.c
 DIST_WEB   := dist/web
 DIST_NATIVE:= dist/native
 
