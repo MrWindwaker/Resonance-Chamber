@@ -36,4 +36,11 @@ bool Board_InBounds(HexCoord hex);
 Tile *Board_Get(Board *board, HexCoord hex);
 void Board_Init(Board *Board);
 
+int RouteTurn(int entryDir, int rotation);
+int RouteStraight(int entryDir, int rotation);
+
+bool Tile_RouteEdges(Tile tile, int *outDirA, int *outDirB);
+Vector2 EdgeMidpoint(HexCoord hex, int dir, Vector2 origin);
+void DrawTileRoute(HexCoord hex, Tile tile, Vector2 origin);
+
 #endif

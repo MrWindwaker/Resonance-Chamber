@@ -18,6 +18,7 @@ HexCoord HexNeighbor(HexCoord hex, int direction);
 Vector2 HexToScreen(HexCoord hex, Vector2 origin);
 HexCoord ScreenToHex(Vector2 point, Vector2 origin);
 void HexCorners(Vector2 center, Vector2 outCorners[6]);
+Vector2 HexEdgeMidpoint(HexCoord hex, int direction, Vector2 origin);
 
 void DrawHex(HexCoord hex, Vector2 origin, Color fillColor, Color lineColor);
 

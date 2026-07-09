@@ -94,3 +94,11 @@ void HexCorners(Vector2 center, Vector2 outCorners[6]) {
         outCorners[i] = (Vector2){ center.x + dx, center.y + dy };
     }
 }
+
+
+Vector2 HexEdgeMidpoint(HexCoord hex, int direction, Vector2 origin) {
+    Vector2 a = HexToScreen(hex, origin);
+    Vector2 b = HexToScreen(HexNeighbor(hex, direction),origin);
+
+    return (Vector2){(a.x+b.x)/2.0f, (a.y+b.y)/2.0};
+}
